@@ -1,13 +1,23 @@
+import './App.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from "./components/Layout.jsx"
+import PreviousOrders from "./pages/PreviousOrders.jsx"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-      <App/>
-  </React.StrictMode>
-);
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="previousOrders" element={<PreviousOrders />}/>
+        </Route>
+          
+      </Routes>
+    </BrowserRouter>
+  )
+}
 
-
+ReactDOM 
+  .createRoot(document.getElementById('root'))
+  .render(<App/>)
