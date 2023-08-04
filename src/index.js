@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="previousOrders" element={<PreviousOrders />}/>
         </Route>
+          <Route path="previousOrders" element={<PreviousOrders />}/>
           
       </Routes>
     </BrowserRouter>

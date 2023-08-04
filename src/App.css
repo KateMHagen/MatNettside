@@ -23,10 +23,6 @@ header {
   margin-bottom: 2rem;
 }
 
-header p {
- width: 90%;
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -74,8 +70,8 @@ section {
   height: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
+
 
 .section-price {
   margin-top: 0.3rem;
@@ -111,18 +107,27 @@ section {
 
 /* PREVIOUS ORDERS */
 
-.previous-order {
-
-  
-  background-color: black;
+.orders-container {
 
 }
 
+.orders-header{
+  margin-bottom: -2rem;
+  padding: 0;
+}
+
+.orders-section {
+  
+  height: 500px;
+
+  
+
+}
 
 @media (min-width: 760px) {
 
   * {
-  
+    overflow: hidden;
   }
 
   .wrapper {
@@ -143,7 +148,7 @@ section {
     letter-spacing: 0.75px;
     border: none;
     margin-bottom: 0;
-    padding: 3rem 3rem 2rem 3rem;;
+    padding: 3rem 3rem 2rem 3rem;
   }
 
   section {
